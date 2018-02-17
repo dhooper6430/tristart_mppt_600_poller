@@ -77,7 +77,7 @@ print "Daily Amp Hours In : %.4f" % daily_amp_hours +" Amps"
 
 if battV < 48.00:
     print "Battery Volts is WARNING - Volts:%.4f"%battV +" | battvolts=%.4f"%battV +" BatteryChargeCurrent=%.4f"%battcc +" ArrayVoltage=%.4f"%arrayV +" ArrayCurrent=%.4f"%arrayC +" HeatsinkTemperature=%.2f"%tempH +" BatteryTemperature=%.2f"%batt_temp +" DailyAmpHoursIn=%.4f"%daily_amp_hours
-    sys.ext(1)
+    sys.exit(1)
 
 elif alarm == 4:
     print "Fault Detected"
